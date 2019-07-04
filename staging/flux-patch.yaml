@@ -18,6 +18,9 @@ spec:
       containers:
       - image: stefanprodan/podinfo:1.4.4
         name: podinfod
+        env:
+        - name: PODINFO_UI_COLOR
+          value: red
       initContainers:
       - image: alpine:3.10
         name: init
